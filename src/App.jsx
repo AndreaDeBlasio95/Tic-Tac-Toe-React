@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Player from "./components/Player";
 
 function App() {
   return (
@@ -8,14 +9,8 @@ function App() {
       <main>
         <div id="game-container">
           <ol>
-            <li>
-              <span>Player 1</span>
-              <span>X</span>
-            </li>
-            <li>
-              <span>Player 2</span>
-              <span>O</span>
-            </li>
+            <Player name="Player 1" symbol="X" />
+            <Player name="Player 2" symbol="O" />
           </ol>
         </div>
       </main>

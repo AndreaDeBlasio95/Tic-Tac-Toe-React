@@ -54,10 +54,10 @@
 
 #game-container li {
   display: inline-block; /* Display list items in the same line */
-  margin-right: 20px; /* Adjust as needed for spacing between items */
-  margin-left: 20px; /* Adjust as needed for spacing between items */
+  margin-right: 10px; /* Adjust as needed for spacing between items */
+  margin-left: 10px; /* Adjust as needed for spacing between items */
 }
 
 #game-container li span {
-  margin-right: 100px; /* Adjust as needed for spacing between text and symbol */
+  margin-right: 50px; /* Adjust as needed for spacing between text and symbol */
 }

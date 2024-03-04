@@ -28,6 +28,8 @@ export default function Player({ initialName, symbol }) {
         onChange={handleChange}
       />
     );
+    // two way biding value (get) and onChange (set)
+
     //btnCapition = "Save";
   }
 

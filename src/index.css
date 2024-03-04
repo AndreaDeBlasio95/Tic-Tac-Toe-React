@@ -82,3 +82,18 @@ button:focus-visible {
   width: 93px; /* Set the desired fixed width */
   height: 30px;
 }
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+}

@@ -59,5 +59,6 @@
 }
 
 #game-container li span {
-  margin-right: 50px; /* Adjust as needed for spacing between text and symbol */
+  margin-right: 30px; /* Adjust as needed for spacing between text and symbol */
+  margin-left: 20px;
 }

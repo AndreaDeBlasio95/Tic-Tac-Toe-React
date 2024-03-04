@@ -77,3 +77,8 @@ button:focus-visible {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
+
+.fixed-width-input {
+  width: 93px; /* Set the desired fixed width */
+  height: 30px;
+}

@@ -6,20 +6,18 @@ const initialGameBoard = [
 
 export default function GameBoard() {
   return (
-    <div className="game-board">
-      <ol>
-        {initialGameBoard.map((row, rowIndex) => (
-          <li key={rowIndex}>
-            <ol>
-              {row.map((playerSymbol, colIndex) => (
-                <li key={colIndex}>
-                  <button>{playerSymbol}</button>
-                </li>
-              ))}
-            </ol>
-          </li>
-        ))}
-      </ol>
-    </div>
+    <ol className="game-board">
+      {initialGameBoard.map((row, rowIndex) => (
+        <li key={rowIndex} className="row">
+          <ol>
+            {row.map((playerSymbol, colIndex) => (
+              <button key={colIndex} className="game-button">
+                {playerSymbol}
+              </button>
+            ))}
+          </ol>
+        </li>
+      ))}
+    </ol>
   );
 }

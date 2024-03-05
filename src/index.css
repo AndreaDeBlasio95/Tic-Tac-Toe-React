@@ -83,17 +83,24 @@ button:focus-visible {
   height: 30px;
 }
 
+.cell {
+  flex: 1;
+}
+
 .game-board {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  width: 150px; /* Adjust width as needed */
+  grid-template-columns: repeat(3, auto); /* 3 columns of equal width */
+  gap: 3px; /* Space between buttons */
 }
 
 .row {
   display: flex;
+  justify-content: center; /* Center buttons horizontally */
 }
 
-.cell {
-  flex: 1;
+.game-button {
+  width: 140px; /* Adjust button width as needed */
+  height: 140px; /* Adjust button height as needed */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 30px;
 }

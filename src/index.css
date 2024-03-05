@@ -103,4 +103,18 @@ button:focus-visible {
   height: 140px; /* Adjust button height as needed */
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 30px;
+  background-color: rgb(15, 57, 99);
+}
+
+#player.highlight-player li.active {
+  border-color: #646cff;
+  animation: pulse 2s infinite ease-in-out;
+  font-weight: bold;
+}
+
+#player.highlight-player li.active .player-name,
+#player.highlight-player li.active .player-symbol {
+  color: #646cff;
+  font-weight: bold;
+  font-size: 18;
 }

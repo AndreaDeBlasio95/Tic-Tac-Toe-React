@@ -118,3 +118,23 @@ button:focus-visible {
   font-weight: bold;
   font-size: 18;
 }
+
+.animated-log {
+  color: #5a7ee2; /* Blueish color */
+  font-weight: 600;
+}
+
+.animated-log li {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

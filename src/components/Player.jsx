@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-export default function Player({ initialName, symbol, isActive }) {
+export default function Player({
+  initialName,
+  symbol,
+  isActive,
+  onChangeName,
+}) {
   // array destructuring
   const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPlayerName] = useState(initialName);
@@ -9,6 +14,9 @@ export default function Player({ initialName, symbol, isActive }) {
     setIsEditing((editing) => !editing);
     // don't use the line below, it will not work immediately in React because of its asynchronous nature
     //setIsEditing(isEditing);
+    if (isEditing) {
+      onChangeName(symbol, playerName);
+    }
   }
 
   function handleChange(event) {
